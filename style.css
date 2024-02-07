@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  padding: 0;
+}
+.container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0 0.1px 0.9px #cecdcd;
+}
+.container nav h1 {
+  font-size: 36px;
+  font-weight: 550;
+  cursor: pointer;
+}
+.container nav p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #212121;
+}
+.container .first-page {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.container .first-page_text {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  margin-left: 30px;
+}
+.container .first-page_h1 {
+  display: flex;
+  font-size: 110px;
+  font-weight: 500;
+  align-items: center;
+  gap: 30px;
+}
+.container .first-page_h1 img {
+  height: 100px;
+}
+.container .first-page_p {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 35.41px;
+  width: 50%;
+  margin-bottom: 70px;
+}
+.container .first-page_btn {
+  cursor: pointer;
+}
+.container .first-page_btn:active {
+  transform: translateY(3px);
+  transition: 0.3s;
+}
+.container .first-page_icons {
+  margin-top: 50px;
+}
+.container .second-page {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 150px;
+}
+.container .second-page_item-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  align-items: center;
+  justify-content: space-around;
+}
+.container .second-page_item-home_items {
+  border: 3px solid #9864AA;
+  padding: 40px 90px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.container .second-page_item-home_items h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.container .third-page {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 200px;
+}
+.container .third-page_btn {
+  padding: 12px 40px;
+  font-size: 27px;
+  font-weight: 500;
+  background: #9864AA;
+  color: #fff;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+.container .third-page_home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+  gap: 50px;
+}
+.container .third-page_home_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.container .third-page_home_items .hoverbox {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  color: #212121;
+}
+.container .third-page_home_items .hoverbox:hover h1 {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.container .third-page_home_items .hoverbox h1 {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, 150%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.container .third-page_home_items img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container .footer {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 20px;
+}
+.container .footer_btn {
+  padding: 12px 40px;
+  font-size: 27px;
+  font-weight: 500;
+  background: #9864AA;
+  color: #fff;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+.container .footer_home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 260px));
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+}
+.container .footer_home_items {
+  cursor: pointer;
+}
+.container .footer_home_items img {
+  filter: grayscale(1);
+}
+.container .footer_home_items img:hover {
+  filter: grayscale(0);
+}
+
+.third-page_btn:hover {
+  color: rgb(0, 0, 255);
+  transition: 1.2s;
+}
+
+.footer_btn:hover {
+  color: rgb(0, 0, 255);
+  transition: 1.2s;
+}/*# sourceMappingURL=style.css.map */
