@@ -89,12 +89,17 @@
 }
 .container .second-page_item-home_items {
   border: 3px solid #9864AA;
+  transform: scale(0.97);
   padding: 40px 90px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
   gap: 30px;
+}
+.container .second-page_item-home_items:hover {
+  transform: scale(1);
 }
 .container .second-page_item-home_items h1 {
   font-size: 35px;
